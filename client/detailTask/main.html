@@ -1,0 +1,13 @@
+<!-- detailTask/main.html  -->
+<!-- ============================================================================================================== -->
+
+<template name="detailTask">
+  <li class="{{#if isChecked}}isChecked{{/if}} {{#if isPrivate}}isPrivate{{/if}}">
+    {{> deleteTask  }}
+    {{> checkTask   }} 
+    {{> privateTask }} 
+    <span class="text"><strong>{{username}}</strong> - {{text}}</span>
+  </li>
+</template>
+
+<!-- ============================================================================================================== -->
